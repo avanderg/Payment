@@ -8,6 +8,7 @@ def run(People):
     People.printResult()
     # print(type(People))
     People.checkTotal()
+    People.totalTip()
 
 
 def main():

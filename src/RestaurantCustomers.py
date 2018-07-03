@@ -43,3 +43,8 @@ class RestaurantCustomerStorage(PersonStorage):
 
     def checkTotal(self):
         print('Total: ', self.testTotal)
+    
+    def totalTip(self):
+        print('Total tip : ', self.testTotal - self.total)
+
+

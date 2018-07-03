@@ -11,7 +11,7 @@ def run(People):
 
 
 def main():
-    total = float(input('Input the total bill '))
+    total = float(input('Input the total bill before tax'))
     People = RestaurantCustomerStorage(total)
     run(People)
 

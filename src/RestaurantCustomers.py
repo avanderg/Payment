@@ -15,7 +15,8 @@ class RestaurantCustomerStorage(PersonStorage):
         self.tip = tip
 
     def getTotal(self, owe):
-        return owe + owe * self.tax + owe * self.tip
+        owe += owe*self.tax
+        return owe + owe*self.tip
 
     def queryTipTax(self):
         answer = input('If you would like to change the tip or tax, input the values. Type tip to change tip and tax to'
